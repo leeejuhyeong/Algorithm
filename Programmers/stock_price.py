@@ -13,8 +13,8 @@ def solution(prices):
                 else:
                     break
         stack.append([i, prices[i]])
-    lenth = len(stack)
-    for i in range(lenth):
+    length = len(stack)
+    for i in range(length):
         answer[stack[0][0]] = stack[-1][0] - stack[0][0]
         stack.pop(0)
 
