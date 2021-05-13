@@ -1,6 +1,5 @@
 def solution(citations):
     answer = 0
-
     citations.sort(reverse=True)
     paper = len(citations)
     average = sum(citations) // paper
