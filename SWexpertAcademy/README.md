@@ -1,1 +1,0 @@
-SW expert Academy Algorithm
