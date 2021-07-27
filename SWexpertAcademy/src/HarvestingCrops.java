@@ -4,15 +4,14 @@ public class HarvestingCrops {
     public static int[][] map;
     public int solution(int N, int[][] map){
         int sum = 0;
-        for(int i = 0; i <= N/2; i++){
-            int j = N / 2 - i;
-            for(int k = j; k < N - j; k++){
-                sum += map[i][k];
+        for(int i = 0; i <= N / 2; i++){
+            for(int j = N/2 - i; j <= N/2 +i; j++){
+                sum += map[i][j];
             }
         }
         for(int i = 0; i < N/2; i++){
-            for(int j = i+1; j < N - (i+1); j++){
-                sum += map[i + 1 + N/2][j];
+            for(int j = N/2 - i; j <= N/2 +i; j++){
+                sum += map[N-i-1][j];
             }
         }
         return sum;
