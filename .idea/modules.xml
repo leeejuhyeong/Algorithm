@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Algorithm.iml" filepath="$PROJECT_DIR$/.idea/Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programmers/Programmers.iml" filepath="$PROJECT_DIR$/Programmers/Programmers.iml" />
       <module fileurl="file://$PROJECT_DIR$/SWexpertAcademy/SWexpertAcademy.iml" filepath="$PROJECT_DIR$/SWexpertAcademy/SWexpertAcademy.iml" />
     </modules>
   </component>
