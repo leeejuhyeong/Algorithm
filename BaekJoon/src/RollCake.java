@@ -30,8 +30,7 @@ public class RollCake {
             }
 
             for(int j = start; j <= end; j++){
-                if(rollcake[j] != 0) continue;      // 이미 받아간거면 무시
-                else{
+                if(rollcake[j] == 0){
                     rollcake[j] = i;
                     temp++;
                 }
