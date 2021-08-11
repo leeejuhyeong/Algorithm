@@ -104,12 +104,24 @@ public class B16935_이주형 {
 
         for (int i = 0; i < r; i++) {
             switch (cases[i]) {
-                case 1 -> array = one(array);
-                case 2 -> array = two(array);
-                case 3 -> array = three(array);
-                case 4 -> array = four(array);
-                case 5 -> array = five(array);
-                case 6 -> array = six(array);
+                case 1:
+                    array = one(array);
+                    break;
+                case 2:
+                    array = two(array);
+                    break;
+                case 3:
+                    array = three(array);
+                    break;
+                case 4:
+                    array = four(array);
+                    break;
+                case 5:
+                    array = five(array);
+                    break;
+                case 6:
+                    array = six(array);
+                    break;
             }
         }
         bw = new BufferedWriter(new OutputStreamWriter(System.out));
