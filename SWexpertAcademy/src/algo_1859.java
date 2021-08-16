@@ -18,10 +18,10 @@ public class algo_1859 {
             int sell = 0;
             long result = 0;
 
-            for(int i = n-1; i >= 0; i--){
-                if(products[i] > sell){
+            for(int i = n-1; i >= 0; i--){      // 뒤에서부터 비교
+                if(products[i] > sell){         // 큰 값이 나오면 파는날이므로 sell 변경
                     sell = products[i];
-                } else result += sell - products[i];
+                } else result += sell - products[i];    // 파는날(큰값)보다 앞에 있는 날이므로 계속 판매
             }
 
             System.out.println("#" + test_case + " " + result);
