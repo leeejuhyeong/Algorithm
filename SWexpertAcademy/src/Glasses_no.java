@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class Glasses_no {
     public static char[] one = {'A', 'D', 'O', 'P', 'Q', 'R'};
     public String Solution(String first, String second){
-        if(first.length() != second.length()) return "DIFF";
+        if(first.length() != second.length()) return "DIFF";    // 문자열 길이가 다를 경우
         else{
             for(int i = 0; i < first.length(); i++) {
-                if (!IsitSame(first.charAt(i), second.charAt(i))) return "DIFF";
+                if (!IsitSame(first.charAt(i), second.charAt(i))) return "DIFF";    // 문자를 하나씩 비교하면서 다를경우 DIFF
             }
             return "SAME";
         }
@@ -18,7 +18,7 @@ public class Glasses_no {
         if(first == 'B') first_result = 2;
         else {
             for (int i = 0; i < one.length; i++) {
-                if (first == one[i]) {
+                if (first == one[i]) {              // ADOPQR인지 확인
                     first_result = 1;
                     break;
                 }
@@ -27,7 +27,7 @@ public class Glasses_no {
         if(second == 'B') second_result = 2;
         else {
             for (int i = 0; i < one.length; i++) {
-                if (second == one[i]) {
+                if (second == one[i]) {             // ADOPQR인지 확인
                     second_result = 1;
                     break;
                 }
