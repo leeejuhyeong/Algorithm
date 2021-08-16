@@ -1,7 +1,8 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
-// 14192KB, 140ms
+
 public class algo_2578_이주형 {
     static int result;          // 빙고 개수
     static boolean[][] bingo;   // 빙고판(숫자 호출 시 true)

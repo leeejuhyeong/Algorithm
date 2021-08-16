@@ -34,7 +34,6 @@ public class BlackJack {
 
         st = new StringTokenizer(br.readLine());
 
-
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
 
