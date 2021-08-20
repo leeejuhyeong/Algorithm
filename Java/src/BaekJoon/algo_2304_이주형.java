@@ -59,8 +59,8 @@ public class algo_2304_이주형 {
             temp = 1;
         }
 
-        if(start != bstart){        // 가장 높은 기둥 넓이
-            area += (pillar[bstart][0] - pillar[start][0] + 1) * high;      // start ~ bstart까지이기 때문에 너비는 bstart - start + 1이다!!
+        if(start != bstart){        // 가장 높은 기둥 넓이          Point 1. 가장 높은 기둥이 여러개일 수 있음.
+            area += (pillar[bstart][0] - pillar[start][0] + 1) * high;      // Point 2. start ~ bstart까지이기 때문에 너비는 bstart - start + 1이다!!
         } else area += high;
 
         System.out.println(area);
